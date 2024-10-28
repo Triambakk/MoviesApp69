@@ -53,14 +53,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Fullscreen view configuration
         Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         initBanner();
         initTopMoving();
-        initUpcoming();
+        initUpcomming();
     }
-    private void initUpcoming() {
-        DatabaseReference myRef = database.getReference("Upcoming");
+    private void initUpcomming() {
+        DatabaseReference myRef = database.getReference("Upcomming");
         binding.progressBarUpcoming.setVisibility(View.VISIBLE);
         ArrayList<Film> items = new ArrayList<>();
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     if (!items.isEmpty()) {
                         binding.recyclerViewTopMovies.setLayoutManager(new LinearLayoutManager(MainActivity.this,
                                 LinearLayoutManager.HORIZONTAL, false));
-                        binding.recyclerViewTopMovies.setAdapter(new FilmListAdapter(items, MainActivity.this));
+                        binding.recyclerViewTopMovies.setAdapter(new FilmListAdapter(items));
                     }
                     binding.progressBarTop.setVisibility(View.GONE);
                 }

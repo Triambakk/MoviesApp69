@@ -3,25 +3,25 @@ package com.example.moviesapp.Domains;
 import java.io.Serializable;
 
 public class Cast implements Serializable {
-    private String picUrl;
-    private String actor;
+    private String PicUrl;
+    private String Actor;
 
     public Cast() {
     }
 
     public String getPicUrl() {
-        return picUrl;
+        return PicUrl;
     }
 
     public void setPicUrl(String picUrl) {
-        this.picUrl = picUrl;
+        PicUrl = picUrl;
     }
 
     public String getActor() {
-        return actor;
+        return Actor;
     }
 
     public void setActor(String actor) {
-        this.actor = actor;
+        Actor = actor;
     }
 }

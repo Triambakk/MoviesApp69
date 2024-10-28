@@ -4,15 +4,15 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Film implements Serializable {
-    private String title;
-    private String description;
-    private String poster;
-    private String time;
-    private String trailer;
-    private int imdb;
-    private int year;
-    private ArrayList<String> genre;
-    private ArrayList<Cast> casts;
+    private String Title;
+    private String Description;
+    private String Poster;
+    private String Time;
+    private String Trailer;
+    private int Imdb;
+    private int Year;
+    private ArrayList<String> Genre;
+    private ArrayList<Cast> Casts;
 
     // Default constructor required for calls to DataSnapshot.getValue(Film.class)
     public Film() {
@@ -20,74 +20,74 @@ public class Film implements Serializable {
 
     // Getters and Setters
     public String getTitle() {
-        return title;
+        return Title;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        Title = title;
     }
 
     public String getDescription() {
-        return description;
+        return Description;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        Description = description;
     }
 
     public String getPoster() {
-        return poster;
+        return Poster;
     }
 
     public void setPoster(String poster) {
-        this.poster = poster;
+        Poster = poster;
     }
 
     public String getTime() {
-        return time;
+        return Time;
     }
 
     public void setTime(String time) {
-        this.time = time;
+        Time = time;
     }
 
     public String getTrailer() {
-        return trailer;
+        return Trailer;
     }
 
     public void setTrailer(String trailer) {
-        this.trailer = trailer;
+        Trailer = trailer;
     }
 
     public int getImdb() {
-        return imdb;
+        return Imdb;
     }
 
     public void setImdb(int imdb) {
-        this.imdb = imdb;
+        Imdb = imdb;
     }
 
     public int getYear() {
-        return year;
+        return Year;
     }
 
     public void setYear(int year) {
-        this.year = year;
+        Year = year;
     }
 
     public ArrayList<String> getGenre() {
-        return genre;
+        return Genre;
     }
 
     public void setGenre(ArrayList<String> genre) {
-        this.genre = genre;
+        Genre = genre;
     }
 
     public ArrayList<Cast> getCasts() {
-        return casts;
+        return Casts;
     }
 
     public void setCasts(ArrayList<Cast> casts) {
-        this.casts = casts;
+        Casts = casts;
     }
 }
